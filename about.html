@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — CBM Capital Property & Building Maintenance Ltd</title>
+<meta name="description" content="Learn about Capital Property & Building Maintenance Ltd — our story, values, team and commitment to Edinburgh and the Lothians.">
+<link rel="stylesheet" href="styles/main.css">
+<style>
+/* About-specific styles */
+.timeline { position: relative; padding-left: 2.5rem; }
+.timeline::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 2px; background: linear-gradient(to bottom, var(--gold), rgba(201,153,47,0.1));
+}
+.timeline-item { position: relative; padding-bottom: 3rem; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+  position: absolute; left: -2.85rem; top: 0.2rem;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--gold); border: 3px solid var(--navy-deep);
+  box-shadow: 0 0 0 3px var(--gold);
+}
+.timeline-year {
+  font-family: 'Space Grotesk', monospace; font-size: 0.7rem;
+  font-weight: 700; letter-spacing: 0.18em; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 0.5rem;
+}
+.timeline-item h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.timeline-item p { font-size: 0.9rem; }
+
+.values-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5px; background: var(--fine-rule); margin-top: 3rem;
+}
+.value-card {
+  background: var(--white); padding: 2.5rem 2rem;
+  transition: all 0.35s var(--ease);
+}
+.value-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(28,58,107,0.1); }
+.value-card-icon {
+  width: 52px; height: 52px; background: rgba(201,153,47,0.1);
+  border-radius: 4px; display: flex; align-items: center;
+  justify-content: center; color: var(--gold); margin-bottom: 1.2rem;
+}
+.value-card h3 { font-size: 1.1rem; margin-bottom: 0.6rem; }
+
+.team-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.team-card { text-align: center; }
+.team-img {
+  width: 100%; aspect-ratio: 1; object-fit: cover;
+  filter: grayscale(20%); transition: filter 0.4s;
+}
+.team-card:hover .team-img { filter: grayscale(0%); }
+.team-info { padding: 1.2rem 0; border-bottom: 1px solid var(--fine-rule); }
+.team-info strong {
+  display: block; font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem; font-weight: 700; color: var(--navy-deep);
+}
+.team-info span { font-size: 0.82rem; color: var(--text-muted); }
+
+.accred-strip {
+  display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;
+  padding: 2rem 0; border-top: 1px solid var(--fine-rule);
+  border-bottom: 1px solid var(--fine-rule);
+}
+.accred-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem;
+  font-weight: 600; color: var(--navy-mid);
+}
+.accred-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; }
+
+.hs-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+}
+@media (max-width: 768px) {
+  .hs-grid { grid-template-columns: 1fr; }
+  .timeline { padding-left: 1.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav scrolled" id="site-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/cbm-logo.PNG" alt="CBM">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="tel:+4407958965387" class="nav-phone">
+      <i data-lucide="phone" style="width:14px;height:14px;"></i>
+      +44 07958 965387
+    </a>
+    <a href="contact.html" class="btn btn-primary" style="padding:0.65rem 1.3rem;font-size:0.82rem;">Get a Quote</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:+4407958965387" style="color:var(--gold);">+44 07958 965387</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <strong>About Us</strong>
+    </div>
+    <h1 class="anim-hero-1">Trusted property expertise, <em>rooted in Edinburgh.</em></h1>
+    <p class="anim-hero-2">Capital Property &amp; Building Maintenance Ltd has been serving Edinburgh and the Lothians with professional, reliable property maintenance since our founding.</p>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="section-inner">
+    <div class="hs-grid">
+      <div class="reveal-left">
+        <p class="micro-label" style="margin-bottom:0.8rem;">Who We Are</p>
+        <h2>More than maintenance — <em>a partnership you can rely on.</em></h2>
+        <p style="margin-top:1.2rem;">We aspire to be recognised as the go-to company for all residential, commercial and domestic property and building maintenance needs, delivering reliable solutions with the utmost professionalism, integrity, and innovation.</p>
+        <p>With our vision as our guiding force, we aim to create lasting value for our clients. We are passionate about providing exceptional property and building services, enriching lives, and making a difference in the industry we serve. It is our clients' trust and support that fuels our continued success.</p>
+        <p>At CBM we are building a future where everyone can rely on our expertise, knowing they are in safe and capable hands.</p>
+        <div class="accred-strip" style="margin-top:2rem;">
+          <div class="accred-item"><div class="accred-dot"></div>NICEIC Approved</div>
+          <div class="accred-item"><div class="accred-dot"></div>Gas Safe Registered</div>
+          <div class="accred-item"><div class="accred-dot"></div>ISO 9001</div>
+          <div class="accred-item"><div class="accred-dot"></div>CHAS Accredited</div>
+        </div>
+      </div>
+      <div class="reveal-up delay-2" style="position:relative;overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80" alt="CBM team" loading="lazy" style="width:100%;height:500px;object-fit:cover;">
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,var(--navy-deep),transparent);padding:2rem 1.5rem;">
+          <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:var(--white);margin:0;line-height:1.5;">
+            "At CBM we are building a future where everyone can rely on our expertise."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section stats-section">
+  <div class="section-inner">
+    <div class="stats-grid">
+      <div class="stat-item reveal-up delay-1">
+        <div class="stat-num" data-target="10" data-suffix="+">0</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item reveal-up delay-2">
+        <div class="stat-num" data-target="20" data-suffix="+">0</div>
+        <div class="stat-label">Apprenticeships Created</div>
+      </div>
+      <div class="stat-item reveal-up delay-3">
+        <div class="stat-num" data-target="95" data-suffix="%">0</div>
+        <div class="stat-label">Client Retention Rate</div>
+      </div>
+      <div class="stat-item reveal-up delay-4">
+        <div class="stat-num" data-target="650" data-suffix="+">0</div>
+        <div class="stat-label">Service Calls Attended</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section services-bg">
+  <div class="section-inner">
+    <div class="section-header reveal-up">
+      <p class="micro-label" style="margin-bottom:0.8rem;">Our Values</p>
+      <h2>The principles that guide <em>everything we do.</em></h2>
+      <div class="fine-rule" style="margin-top:1.5rem;"></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal-up delay-1">
+        <div class="value-card-icon"><i data-lucide="heart-handshake" style="width:22px;height:22px;"></i></div>
+        <h3>Customer First</h3>
+        <p>Placing the needs and satisfaction of our clients at the heart of every project we undertake. We listen, we respond, and we deliver.</p>
+      </div>
+      <div class="value-card reveal-up delay-2">
+        <div class="value-card-icon"><i data-lucide="award" style="width:22px;height:22px;"></i></div>
+        <h3>Industry Expertise</h3>
+        <p>A highly skilled team with decades of combined experience across all property disciplines — bringing real knowledge to every job.</p>
+      </div>
+      <div class="value-card reveal-up delay-3">
+        <div class="value-card-icon"><i data-lucide="shield-check" style="width:22px;height:22px;"></i></div>
+        <h3>Transparency &amp; Integrity</h3>
+        <p>Clear communication, honest pricing and accountable workmanship on every job. No hidden costs, no surprises.</p>
+      </div>
+      <div class="value-card reveal-up delay-4">
+        <div class="value-card-icon"><i data-lucide="lightbulb" style="width:22px;height:22px;"></i></div>
+        <h3>Innovation</h3>
+        <p>Embracing new methods, technologies and sustainable practices to improve efficiency and reduce environmental impact.</p>
+      </div>
+      <div class="value-card reveal-up delay-1">
+        <div class="value-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
+        <h3>Community</h3>
+        <p>Investing in Edinburgh's workforce through apprenticeships, training, and local employment — supporting the communities we serve.</p>
+      </div>
+      <div class="value-card reveal-up delay-2">
+        <div class="value-card-icon"><i data-lucide="trending-up" style="width:22px;height:22px;"></i></div>
+        <h3>Continuous Improvement</h3>
+        <p>Constantly refining our processes and upskilling our team so we deliver even better results today than we did yesterday.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section" style="background:var(--navy-deep);">
+  <div class="section-inner">
+    <div class="hs-grid">
+      <div class="reveal-up">
+        <p class="micro-label" style="margin-bottom:0.8rem;">Our Story</p>
+        <h2 style="color:var(--white);">Building on a <em>strong foundation.</em></h2>
+        <p style="color:rgba(255,255,255,0.6);margin-top:1rem;margin-bottom:2.5rem;">From our first Edinburgh project to a comprehensive property maintenance operation serving clients across the Lothians — each chapter built on the last.</p>
+        <a href="contact.html" class="btn btn-primary">Work With Us <i data-lucide="arrow-right" style="width:15px;height:15px;"></i></a>
+      </div>
+      <div class="timeline reveal-up delay-2">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2014 — Founded</div>
+          <h3 style="color:var(--white);">CBM is established</h3>
+          <p style="color:rgba(255,255,255,0.55);">Capital Property &amp; Building Maintenance Ltd is incorporated in Edinburgh, beginning with residential property maintenance contracts across the Lothians.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2016 — Growth</div>
+          <h3 style="color:var(--white);">Commercial services expansion</h3>
+          <p style="color:rgba(255,255,255,0.55);">CBM extends its service offering to commercial clients, securing major building services contracts across Edinburgh's commercial sector.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2019 — Accreditation</div>
+          <h3 style="color:var(--white);">NICEIC &amp; Gas Safe registration</h3>
+          <p style="color:rgba(255,255,255,0.55);">Full NICEIC Approved Contractor status and Gas Safe registration achieved — enabling end-to-end M&amp;E delivery on all projects.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2022 — Milestone</div>
+          <h3 style="color:var(--white);">500+ projects completed</h3>
+          <p style="color:rgba(255,255,255,0.55);">CBM passes the 500-project milestone across residential, commercial and domestic services — with a 95% client retention rate.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2026 — Today</div>
+          <h3 style="color:var(--white);">Edinburgh's trusted maintenance partner</h3>
+          <p style="color:rgba(255,255,255,0.55);">A full-service property and building maintenance company serving Edinburgh and the Lothians — with a growing team of skilled professionals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HEALTH & SAFETY -->
+<section class="section">
+  <div class="section-inner">
+    <div class="hs-grid">
+      <div class="reveal-up">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="Health & Safety" loading="lazy" style="width:100%;height:460px;object-fit:cover;">
+      </div>
+      <div class="reveal-up delay-2">
+        <p class="micro-label" style="margin-bottom:0.8rem;">Health &amp; Safety</p>
+        <h2>Safety is at the <em>core of everything.</em></h2>
+        <p style="margin-top:1.2rem;">The health, safety and wellbeing of our employees, clients and the public is our highest priority. CBM operates under a rigorous health and safety management system, ensuring compliance with all current legislation and industry best practice.</p>
+        <p>All of our operatives are fully trained, certified and regularly assessed. We maintain comprehensive RAMS documentation for every project and conduct regular toolbox talks and site inspections across all active contracts.</p>
+        <div style="margin-top:2rem;display:flex;flex-direction:column;gap:0;">
+          <div class="about-value" style="border-top:1px solid var(--fine-rule);">
+            <div class="about-value-num">01</div>
+            <div><h4>CHAS Accredited</h4><p style="font-size:0.85rem;">Contractors Health and Safety Assessment Scheme — independently audited annually.</p></div>
+          </div>
+          <div class="about-value">
+            <div class="about-value-num">02</div>
+            <div><h4>Full RAMS Documentation</h4><p style="font-size:0.85rem;">Comprehensive risk assessments and method statements for every project and site.</p></div>
+          </div>
+          <div class="about-value">
+            <div class="about-value-num">03</div>
+            <div><h4>Regular Toolbox Talks</h4><p style="font-size:0.85rem;">Ongoing health and safety training for all operatives, updated quarterly.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="reveal-up">
+    <p class="micro-label" style="margin-bottom:0.7rem;color:rgba(201,153,47,0.7);">Get Started</p>
+    <h2>Ready to experience the <em>CBM difference?</em></h2>
+  </div>
+  <div class="cta-actions reveal-up delay-2">
+    <a href="contact.html" class="btn btn-primary">
+      Get a Quote <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+    <a href="services.html" class="btn btn-outline">Our Services</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/cbm-logo.PNG" alt="CBM">
+        <p>Capital Property &amp; Building Maintenance Ltd — delivering trusted property and building maintenance services across Edinburgh and the Lothians.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#residential">Residential Maintenance</a></li>
+          <li><a href="services.html#commercial">Commercial Building</a></li>
+          <li><a href="services.html#domestic">Domestic Services</a></li>
+          <li><a href="services.html#facilities">Facilities Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+4407958965387">+44 07958 965387</a></li>
+          <li><a href="mailto:info@cbm.co.uk">info@cbm.co.uk</a></li>
+          <li style="color:rgba(255,255,255,0.45);font-size:0.88rem;line-height:1.6;">16 Old Row, Wallyford,<br>Edinburgh EH21 8EP</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Capital Property &amp; Building Maintenance Ltd. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Cookie Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

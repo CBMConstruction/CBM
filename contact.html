@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CBM Capital Property & Building Maintenance Ltd</title>
+<meta name="description" content="Get in touch with CBM — Capital Property & Building Maintenance Ltd. Based in Edinburgh, serving the Lothians. Call +44 07958 965387.">
+<link rel="stylesheet" href="styles/main.css">
+<style>
+.contact-page-grid {
+  display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem;
+  align-items: start;
+}
+.contact-card {
+  background: var(--navy-deep); padding: 2.5rem;
+  border-top: 3px solid var(--gold);
+}
+.contact-card h3 {
+  font-family: 'Space Grotesk', sans-serif; font-size: 1rem;
+  font-weight: 700; color: var(--white); margin-bottom: 1.5rem;
+  padding-bottom: 1rem; border-bottom: 1px solid rgba(201,153,47,0.2);
+}
+.contact-card-detail {
+  display: flex; align-items: flex-start; gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.contact-card-detail:last-child { margin-bottom: 0; }
+.contact-card-icon {
+  width: 38px; height: 38px; min-width: 38px;
+  background: rgba(201,153,47,0.12); border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold);
+}
+.contact-card-detail strong {
+  display: block; font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(255,255,255,0.45);
+  margin-bottom: 0.2rem;
+}
+.contact-card-detail p, .contact-card-detail a {
+  font-size: 0.92rem; color: rgba(255,255,255,0.85);
+  margin: 0; line-height: 1.55;
+}
+.contact-card-detail a:hover { color: var(--gold); }
+
+.hours-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.07);
+}
+.hours-row {
+  padding: 0.65rem 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.85rem;
+}
+.hours-row span:first-child { color: rgba(255,255,255,0.5); }
+.hours-row span:last-child { color: rgba(255,255,255,0.85); font-weight: 500; font-family: 'Space Grotesk', sans-serif; }
+
+.map-embed {
+  width: 100%; height: 300px; background: var(--navy);
+  margin-top: 1.5rem; position: relative; overflow: hidden;
+  border: 1px solid rgba(201,153,47,0.15);
+}
+.map-embed iframe { width: 100%; height: 100%; border: none; filter: grayscale(30%) contrast(1.1); }
+
+.form-card {
+  background: var(--white); padding: 3rem;
+  box-shadow: 0 2px 4px rgba(28,58,107,0.06);
+  border-top: 3px solid var(--navy);
+}
+.form-card h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.form-card h2 em { font-style: normal; color: var(--gold); }
+.form-card > p { margin-bottom: 2rem; font-size: 0.9rem; }
+
+.service-chips {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.6rem;
+}
+.chip {
+  padding: 0.45rem 0.9rem; border: 1.5px solid rgba(28,58,107,0.2);
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem;
+  font-weight: 600; cursor: pointer; border-radius: 2px;
+  transition: all 0.2s; color: var(--navy-mid); background: transparent;
+  user-select: none;
+}
+.chip:hover { border-color: var(--navy); color: var(--navy); }
+.chip.selected { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+.faq-item {
+  border-bottom: 1px solid var(--fine-rule);
+}
+.faq-q {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 0; cursor: pointer; gap: 1rem;
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem;
+  font-weight: 600; color: var(--navy-deep);
+  transition: color 0.2s;
+}
+.faq-q:hover { color: var(--navy-mid); }
+.faq-q i { flex-shrink: 0; color: var(--gold); transition: transform 0.3s var(--ease); }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.5s var(--ease), padding 0.3s;
+}
+.faq-a.open { max-height: 300px; padding-bottom: 1.2rem; }
+.faq-a p { font-size: 0.9rem; margin: 0; }
+.faq-item.open .faq-q i { transform: rotate(180deg); }
+
+@media (max-width: 1024px) {
+  .contact-page-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+@media (max-width: 640px) {
+  .form-card { padding: 2rem 1.5rem; }
+  .hours-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav scrolled" id="site-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/cbm-logo.PNG" alt="CBM">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="tel:+4407958965387" class="nav-phone">
+      <i data-lucide="phone" style="width:14px;height:14px;"></i>
+      +44 07958 965387
+    </a>
+    <a href="contact.html" class="btn btn-primary" style="padding:0.65rem 1.3rem;font-size:0.82rem;">Get a Quote</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:+4407958965387" style="color:var(--gold);">+44 07958 965387</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <strong>Contact</strong>
+    </div>
+    <h1 class="anim-hero-1">Let's talk about <em>your project.</em></h1>
+    <p class="anim-hero-2">Whatever your requirement — from a single repair to a full FM contract — we're confident we can help. Get in touch and we'll respond promptly.</p>
+  </div>
+</div>
+
+<!-- MAIN CONTACT -->
+<section class="section">
+  <div class="section-inner">
+    <div class="contact-page-grid">
+
+      <!-- LEFT: info cards -->
+      <div style="display:flex;flex-direction:column;gap:1.5rem;">
+
+        <div class="contact-card reveal-left">
+          <h3>Contact Details</h3>
+          <div class="contact-card-detail">
+            <div class="contact-card-icon"><i data-lucide="phone" style="width:17px;height:17px;"></i></div>
+            <div>
+              <strong>Telephone</strong>
+              <a href="tel:+4407958965387" class="p">+44 07958 965387</a>
+            </div>
+          </div>
+          <div class="contact-card-detail">
+            <div class="contact-card-icon"><i data-lucide="mail" style="width:17px;height:17px;"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@cbm.co.uk" class="p">info@cbm.co.uk</a>
+            </div>
+          </div>
+          <div class="contact-card-detail">
+            <div class="contact-card-icon"><i data-lucide="map-pin" style="width:17px;height:17px;"></i></div>
+            <div>
+              <strong>Address</strong>
+              <p>16 Old Row<br>Wallyford, Edinburgh<br>Scotland EH21 8EP</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card reveal-left delay-1">
+          <h3>Opening Hours</h3>
+          <div class="hours-grid">
+            <div class="hours-row" style="grid-column:1/-1;"><span>Monday – Friday</span><span>08:00 – 17:30</span></div>
+            <div class="hours-row" style="grid-column:1/-1;"><span>Saturday</span><span>09:00 – 13:00</span></div>
+            <div class="hours-row" style="grid-column:1/-1;"><span>Sunday</span><span>Closed</span></div>
+          </div>
+          <p style="margin-top:1rem;font-size:0.82rem;color:rgba(255,255,255,0.4);">Emergency reactive maintenance available 24/7 on existing FM contracts.</p>
+        </div>
+
+        <div class="contact-card reveal-left delay-2">
+          <h3>Find Us</h3>
+          <div class="map-embed">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-2.980,55.930,-2.920,55.960&layer=mapnik&marker=55.945,-2.950"
+              allowfullscreen
+              loading="lazy"
+              title="CBM Location — Wallyford, Edinburgh">
+            </iframe>
+          </div>
+          <p style="margin-top:1rem;font-size:0.82rem;color:rgba(255,255,255,0.45);">
+            Serving Edinburgh, Musselburgh, East Lothian, Midlothian and West Lothian.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: form -->
+      <div class="form-card reveal-up delay-1">
+        <h2>Send us a <em>message.</em></h2>
+        <p>Fill in the form below and a member of our team will be in touch as soon as possible — typically within one business day.</p>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label>Service Required</label>
+          <div class="service-chips" id="chips">
+            <div class="chip" data-value="residential">Residential Maintenance</div>
+            <div class="chip" data-value="commercial">Commercial Building</div>
+            <div class="chip" data-value="domestic">Domestic Services</div>
+            <div class="chip" data-value="facilities">Facilities Management</div>
+            <div class="chip" data-value="general">General Enquiry</div>
+          </div>
+        </div>
+
+        <form id="main-form" onsubmit="submitForm(event)" novalidate>
+          <input type="hidden" id="selected-service" name="service">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-first">First Name *</label>
+              <input type="text" id="cf-first" name="first_name" required placeholder="John">
+            </div>
+            <div class="form-group">
+              <label for="cf-last">Last Name *</label>
+              <input type="text" id="cf-last" name="last_name" required placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-company">Company / Organisation</label>
+            <input type="text" id="cf-company" name="company" placeholder="Optional">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-email">Email Address *</label>
+              <input type="email" id="cf-email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Phone Number</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+44 07...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-property">Property Address / Location</label>
+            <input type="text" id="cf-property" name="property" placeholder="e.g. Edinburgh EH1, or full address">
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Tell Us About Your Requirement *</label>
+            <textarea id="cf-message" name="message" required placeholder="Please describe your project, property type, and any relevant details..."></textarea>
+          </div>
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:0.75rem;">
+            <input type="checkbox" id="cf-consent" name="consent" required style="margin-top:4px;width:auto;accent-color:var(--navy);">
+            <label for="cf-consent" style="font-size:0.8rem;text-transform:none;letter-spacing:0;font-weight:400;color:var(--text-muted);cursor:pointer;">
+              I consent to CBM storing my details to respond to this enquiry. We will not share your data with third parties.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;font-size:0.95rem;">
+            Send Enquiry <i data-lucide="send" style="width:16px;height:16px;"></i>
+          </button>
+          <div id="form-success" style="display:none;margin-top:1.2rem;padding:1.2rem 1.5rem;background:rgba(28,58,107,0.06);border-left:3px solid var(--gold);">
+            <strong style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;color:var(--navy-deep);">Thank you — message received.</strong>
+            <p style="font-size:0.85rem;margin-top:0.3rem;">We'll be back in touch within one business day.</p>
+          </div>
+          <div id="form-error" style="display:none;margin-top:1.2rem;padding:1.2rem 1.5rem;background:rgba(180,30,30,0.06);border-left:3px solid #b41e1e;">
+            <p style="font-size:0.85rem;margin:0;color:#b41e1e;">Please fill in all required fields before submitting.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--cream);">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1.8fr;gap:5rem;align-items:start;" class="faq-outer">
+      <div class="reveal-left">
+        <p class="micro-label" style="margin-bottom:0.8rem;">Common Questions</p>
+        <h2>Frequently <em>asked.</em></h2>
+        <p style="margin-top:1rem;">Can't find the answer you're looking for? Call us directly on <a href="tel:+4407958965387" style="color:var(--navy-mid);font-weight:500;">+44 07958 965387</a> or email <a href="mailto:info@cbm.co.uk" style="color:var(--navy-mid);font-weight:500;">info@cbm.co.uk</a>.</p>
+      </div>
+      <div class="reveal-up delay-1">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            What areas do CBM cover?
+            <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="faq-a">
+            <p>CBM serves Edinburgh, East Lothian, Midlothian, West Lothian, and the wider Lothians area. For larger commercial or FM contracts, we can also cover broader parts of central Scotland — please contact us to discuss.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Are your operatives fully qualified and insured?
+            <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="faq-a">
+            <p>Yes. All CBM operatives hold the relevant qualifications for their discipline — including Gas Safe registration, NICEIC approval, and industry-standard certifications. We carry full public liability and employers' liability insurance on every project.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            How quickly can you respond to a reactive maintenance call?
+            <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="faq-a">
+            <p>For clients on a facilities management contract, we offer a 24/7 reactive response service. For non-contract reactive work, we aim to attend within 24–48 hours for urgent issues and provide a confirmed appointment date within one working day of your enquiry.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Do you provide free quotes?
+            <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="faq-a">
+            <p>Yes — we provide free, no-obligation quotes for all projects. For smaller domestic jobs we can often quote over the phone or via email. For larger projects we'll arrange a site visit at a time that suits you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Can CBM work in occupied properties?
+            <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+          </div>
+          <div class="faq-a">
+            <p>Absolutely. We regularly carry out works in occupied residential and commercial properties and understand the importance of minimising disruption, maintaining cleanliness and communicating clearly with occupants throughout.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="reveal-up">
+    <p class="micro-label" style="margin-bottom:0.7rem;color:rgba(201,153,47,0.7);">Ready to Start?</p>
+    <h2>Your property is in <em>safe hands</em> with CBM.</h2>
+  </div>
+  <div class="cta-actions reveal-up delay-2">
+    <a href="tel:+4407958965387" class="btn btn-primary">
+      <i data-lucide="phone" style="width:16px;height:16px;"></i> +44 07958 965387
+    </a>
+    <a href="services.html" class="btn btn-outline">
+      Our Services <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/cbm-logo.PNG" alt="CBM">
+        <p>Capital Property &amp; Building Maintenance Ltd — delivering trusted property and building maintenance services across Edinburgh and the Lothians.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#residential">Residential Maintenance</a></li>
+          <li><a href="services.html#commercial">Commercial Building</a></li>
+          <li><a href="services.html#domestic">Domestic Services</a></li>
+          <li><a href="services.html#facilities">Facilities Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+4407958965387">+44 07958 965387</a></li>
+          <li><a href="mailto:info@cbm.co.uk">info@cbm.co.uk</a></li>
+          <li style="color:rgba(255,255,255,0.45);font-size:0.88rem;line-height:1.6;">16 Old Row, Wallyford,<br>Edinburgh EH21 8EP</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Capital Property &amp; Building Maintenance Ltd. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Cookie Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

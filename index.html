@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBM — Capital Property & Building Maintenance Ltd</title>
+<meta name="description" content="Capital Property & Building Maintenance Ltd. Trusted property maintenance and building services across Edinburgh and the Lothians.">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav class="site-nav" id="site-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/cbm-logo.PNG" alt="CBM — Capital Property & Building Maintenance Ltd">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="tel:+4407958965387" class="nav-phone">
+      <i data-lucide="phone" style="width:14px;height:14px;"></i>
+      +44 07958 965387
+    </a>
+    <a href="contact.html" class="btn btn-primary" style="padding:0.65rem 1.3rem;font-size:0.82rem;">Get a Quote</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:+4407958965387" style="color:var(--gold);">+44 07958 965387</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80" alt="Edinburgh buildings" id="hero-img">
+  </div>
+  <div class="hero-inner">
+    <div class="hero-tag anim-hero-1">
+      <div class="hero-tag-line"></div>
+      <span class="micro-label">Edinburgh, Scotland · Est. 2014</span>
+    </div>
+    <h1 class="anim-hero-2">
+      Your trusted partner for<br>
+      <em>property &amp; building</em><br>
+      excellence.
+    </h1>
+    <p class="hero-sub anim-hero-3">
+      Delivering reliable property maintenance, mechanical &amp; electrical services, and facilities management across Edinburgh and the Lothians.
+    </p>
+    <div class="hero-actions anim-hero-4">
+      <a href="services.html" class="btn btn-primary">
+        View Services <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="hero-scroll-line"></div>
+    Scroll to explore
+  </div>
+</section>
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker-strip">
+  <div class="ticker-inner" id="ticker-inner">
+    <!-- duplicated for seamless loop -->
+  </div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="section services-bg">
+  <div class="section-inner">
+    <div class="section-header reveal-up">
+      <p class="micro-label" style="margin-bottom:0.8rem;">What We Do</p>
+      <h2>Comprehensive services for <em>every property need.</em></h2>
+      <div class="fine-rule" style="margin-top:1.5rem;"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal-up delay-1">
+        <div class="service-num">01 · Service</div>
+        <div class="service-icon"><i data-lucide="home" style="width:22px;height:22px;"></i></div>
+        <h3>Residential Property Maintenance</h3>
+        <p>Comprehensive planned and reactive maintenance for residential developments — from minor repairs to full estate upkeep across Edinburgh and the Lothians.</p>
+        <a href="services.html#residential" class="service-link">
+          Learn more <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="service-card reveal-up delay-2">
+        <div class="service-num">02 · Service</div>
+        <div class="service-icon"><i data-lucide="building-2" style="width:22px;height:22px;"></i></div>
+        <h3>Commercial Building Services</h3>
+        <p>Engineering high-performance mechanical and electrical environments for Scotland's leading commercial assets, offices, and retail developments.</p>
+        <a href="services.html#commercial" class="service-link">
+          Learn more <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="service-card reveal-up delay-3">
+        <div class="service-num">03 · Service</div>
+        <div class="service-icon"><i data-lucide="wrench" style="width:22px;height:22px;"></i></div>
+        <h3>Domestic Services</h3>
+        <p>Professional, reliable home care and maintenance delivered with a commitment to quality and safety — plumbing, heating, electrical and general repairs.</p>
+        <a href="services.html#domestic" class="service-link">
+          Learn more <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="service-card reveal-up delay-4">
+        <div class="service-num">04 · Service</div>
+        <div class="service-icon"><i data-lucide="shield-check" style="width:22px;height:22px;"></i></div>
+        <h3>Facilities Management</h3>
+        <p>Preserving asset value and operational continuity through proactive, bespoke facility management — PPM schedules, compliance, and reactive response.</p>
+        <a href="services.html#facilities" class="service-link">
+          Learn more <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<section class="section stats-section">
+  <div class="section-inner">
+    <div class="stats-grid">
+      <div class="stat-item reveal-up delay-1">
+        <div class="stat-num" data-target="10" data-suffix="+">0</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item reveal-up delay-2">
+        <div class="stat-num" data-target="20" data-suffix="+">0</div>
+        <div class="stat-label">Apprenticeships Created</div>
+      </div>
+      <div class="stat-item reveal-up delay-3">
+        <div class="stat-num" data-target="95" data-suffix="%">0</div>
+        <div class="stat-label">Client Retention Rate</div>
+      </div>
+      <div class="stat-item reveal-up delay-4">
+        <div class="stat-num" data-target="650" data-suffix="+">0</div>
+        <div class="stat-label">Service Calls Attended</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="CBM team at work" loading="lazy">
+        <div class="about-img-badge">
+          <strong>10+</strong>
+          <span>Years serving<br>Edinburgh &amp; Lothians</span>
+        </div>
+      </div>
+      <div class="about-text reveal-up delay-2">
+        <p class="micro-label" style="margin-bottom:0.8rem;">About CBM</p>
+        <h2>Built on trust, delivered <em>with expertise.</em></h2>
+        <p style="margin-top:1.5rem;">We aspire to be recognised as the go-to company for all residential, commercial and domestic property and building maintenance needs, delivering reliable solutions with the utmost professionalism, integrity, and innovation.</p>
+        <p>With our vision as our guiding force, we aim to create lasting value for our clients. We are passionate about providing exceptional property and building services, enriching lives, and making a difference in the industry we serve.</p>
+        <div class="about-values">
+          <div class="about-value">
+            <div class="about-value-num">01</div>
+            <div>
+              <h4>Customer First</h4>
+              <p>Placing the needs and satisfaction of our clients at the heart of every project we undertake.</p>
+            </div>
+          </div>
+          <div class="about-value">
+            <div class="about-value-num">02</div>
+            <div>
+              <h4>Industry Expertise</h4>
+              <p>A highly skilled team with decades of combined experience across all property disciplines.</p>
+            </div>
+          </div>
+          <div class="about-value">
+            <div class="about-value-num">03</div>
+            <div>
+              <h4>Transparency &amp; Integrity</h4>
+              <p>Clear communication, honest pricing and accountable workmanship on every job.</p>
+            </div>
+          </div>
+        </div>
+        <a href="about.html" class="btn btn-navy" style="margin-top:2rem;">
+          About Us <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section class="section projects-bg">
+  <div class="section-inner">
+    <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div class="reveal-up">
+        <p class="micro-label" style="margin-bottom:0.8rem;opacity:0.7;">Our Work</p>
+        <h2 style="color:var(--white);">Featured <em>Projects.</em></h2>
+      </div>
+      <a href="services.html" class="btn btn-outline reveal-up delay-2" style="margin-bottom:0.5rem;">
+        All Projects <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal-fade delay-1">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="The Calton" loading="lazy">
+        <div class="project-overlay">
+          <span>Residential M&amp;E</span>
+          <h3>The Calton, Edinburgh</h3>
+        </div>
+      </div>
+      <div class="project-card reveal-fade delay-2">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="Royal Meadows" loading="lazy">
+        <div class="project-overlay">
+          <span>Facilities Management</span>
+          <h3>Royal Meadows</h3>
+        </div>
+      </div>
+      <div class="project-card reveal-fade delay-3">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Queen's Craig" loading="lazy">
+        <div class="project-overlay">
+          <span>Commercial Services</span>
+          <h3>Queen's Craig</h3>
+        </div>
+      </div>
+      <div class="project-card reveal-fade delay-1">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Belwood Oaks" loading="lazy">
+        <div class="project-overlay">
+          <span>Domestic Services</span>
+          <h3>Belwood Oaks, Penicuik</h3>
+        </div>
+      </div>
+      <div class="project-card reveal-fade delay-2">
+        <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&q=80" alt="Saltcoats Grange" loading="lazy">
+        <div class="project-overlay">
+          <span>Residential M&amp;E</span>
+          <h3>Saltcoats Grange, Gullane</h3>
+        </div>
+      </div>
+      <div class="project-card reveal-fade delay-3">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="West Craigs" loading="lazy">
+        <div class="project-overlay">
+          <span>Commercial Building Services</span>
+          <h3>West Craigs Green</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIAL ═══ -->
+<section class="section testimonial-section">
+  <div class="section-inner">
+    <div class="testimonial-inner reveal-up">
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">
+        Our experience with CBM has been nothing short of exceptional. From the moment we engaged their services for our property and building maintenance needs, they demonstrated <em>unmatched professionalism, expertise, and attention to detail.</em> Their team of dedicated professionals went above and beyond to ensure that every aspect of the project was handled seamlessly.
+      </p>
+      <div class="testimonial-author">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Client" loading="lazy">
+        <div class="testimonial-author-info">
+          <strong>AMA Homes</strong>
+          <span>Director — Residential Developer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BAND ═══ -->
+<div class="cta-band">
+  <div class="reveal-up">
+    <p class="micro-label" style="margin-bottom:0.7rem;color:rgba(201,153,47,0.7);">Work With Us</p>
+    <h2>Ready to work with <em>Scotland's trusted</em> maintenance partner?</h2>
+  </div>
+  <div class="cta-actions reveal-up delay-2">
+    <a href="contact.html" class="btn btn-primary">
+      Get a Quote <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+    <a href="tel:+4407958965387" class="btn btn-outline">
+      <i data-lucide="phone" style="width:15px;height:15px;"></i>
+      Call Us
+    </a>
+  </div>
+</div>
+
+<!-- ═══ CONTACT SNIPPET ═══ -->
+<section class="section" style="background:var(--cream);">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <p class="micro-label" style="margin-bottom:0.8rem;">Get In Touch</p>
+        <h2>Whatever your <em>requirement,</em> we can help.</h2>
+        <p style="margin-top:1rem;">Our aim is to always come back to you as soon as possible. Whatever your question or requirement, we're confident we can help — please don't hesitate to get in touch.</p>
+        <div class="contact-detail" style="margin-top:2rem;">
+          <div class="contact-detail-icon"><i data-lucide="phone" style="width:18px;height:18px;"></i></div>
+          <div>
+            <strong>Telephone</strong>
+            <p><a href="tel:+4407958965387">+44 07958 965387</a></p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i data-lucide="mail" style="width:18px;height:18px;"></i></div>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:info@cbm.co.uk">info@cbm.co.uk</a></p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i data-lucide="map-pin" style="width:18px;height:18px;"></i></div>
+          <div>
+            <strong>Address</strong>
+            <p>16 Old Row, Wallyford,<br>Edinburgh, Scotland EH21 8EP</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-up delay-2">
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first_name" required placeholder="John">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last_name" required placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+44 07...">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option>Residential Property Maintenance</option>
+              <option>Commercial Building Services</option>
+              <option>Domestic Services</option>
+              <option>Facilities Management</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us about your project or requirement..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Send Message <i data-lucide="send" style="width:15px;height:15px;"></i>
+          </button>
+          <div id="form-success" style="display:none;margin-top:1rem;padding:1rem;background:rgba(28,58,107,0.08);border-left:3px solid var(--gold);font-size:0.9rem;color:var(--navy);">
+            Thank you — we'll be in touch shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/cbm-logo.PNG" alt="CBM">
+        <p>Capital Property &amp; Building Maintenance Ltd — delivering trusted property and building maintenance services across Edinburgh and the Lothians.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:0.75rem;">
+          <a href="#" class="social-btn" style="width:36px;height:36px;border:1px solid rgba(201,153,47,0.3);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,153,47,0.3)';this.style.color='rgba(255,255,255,0.5)'" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" style="width:36px;height:36px;border:1px solid rgba(201,153,47,0.3);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(201,153,47,0.3)';this.style.color='rgba(255,255,255,0.5)'" aria-label="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#residential">Residential Maintenance</a></li>
+          <li><a href="services.html#commercial">Commercial Building</a></li>
+          <li><a href="services.html#domestic">Domestic Services</a></li>
+          <li><a href="services.html#facilities">Facilities Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+4407958965387">+44 07958 965387</a></li>
+          <li><a href="mailto:info@cbm.co.uk">info@cbm.co.uk</a></li>
+          <li style="color:rgba(255,255,255,0.45);font-size:0.88rem;line-height:1.6;">16 Old Row, Wallyford,<br>Edinburgh EH21 8EP</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Capital Property &amp; Building Maintenance Ltd. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Cookie Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
