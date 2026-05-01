@@ -115,6 +115,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="nav-cta">
@@ -132,6 +133,7 @@
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
   <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
   <a href="contact.html">Contact</a>
   <a href="tel:+4407958965387" style="color:var(--gold);">+44 07958 965387</a>
 </div>
@@ -164,6 +166,9 @@
     <a href="#facilities" style="display:flex;align-items:center;gap:0.5rem;padding:1.1rem 1.5rem;font-family:'Space Grotesk',sans-serif;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.65);border-bottom:2px solid transparent;white-space:nowrap;transition:all 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.65)';this.style.borderColor='transparent'">
       <i data-lucide="shield-check" style="width:14px;height:14px;"></i> Facilities
     </a>
+    <a href="#trades" style="display:flex;align-items:center;gap:0.5rem;padding:1.1rem 1.5rem;font-family:'Space Grotesk',sans-serif;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.65);border-bottom:2px solid transparent;white-space:nowrap;transition:all 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.65)';this.style.borderColor='transparent'">
+      <i data-lucide="hammer" style="width:14px;height:14px;"></i> All Trades
+    </a>
   </div>
 </div>
 
@@ -171,7 +176,9 @@
 <section class="service-section" id="residential">
   <div class="service-section-inner">
     <div class="service-img-wrap reveal-left">
-      <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="Residential Property Maintenance" loading="lazy">
+      <img src="assets/IMG_20260501_131418.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80'"
+           alt="Residential Property Maintenance" loading="lazy">
       <div class="service-tag">01 · Residential</div>
     </div>
     <div class="service-text reveal-up delay-2">
@@ -198,7 +205,9 @@
 <section class="service-section" id="commercial">
   <div class="service-section-inner reverse">
     <div class="service-img-wrap reveal-up">
-      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="Commercial Building Services" loading="lazy">
+      <img src="assets/IMG_20260501_133014.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80'"
+           alt="Commercial Building Services" loading="lazy">
       <div class="service-tag">02 · Commercial</div>
     </div>
     <div class="service-text reveal-up delay-2">
@@ -225,7 +234,9 @@
 <section class="service-section" id="domestic">
   <div class="service-section-inner">
     <div class="service-img-wrap reveal-left">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" alt="Domestic Services" loading="lazy">
+      <img src="assets/IMG_20260501_133015.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80'"
+           alt="Domestic Services" loading="lazy">
       <div class="service-tag">03 · Domestic</div>
     </div>
     <div class="service-text reveal-up delay-2">
@@ -252,7 +263,9 @@
 <section class="service-section" id="facilities">
   <div class="service-section-inner reverse">
     <div class="service-img-wrap reveal-up">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="Facilities Management" loading="lazy">
+      <img src="assets/IMG_20260501_133016.jpg"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80'"
+           alt="Facilities Management" loading="lazy">
       <div class="service-tag">04 · Facilities</div>
     </div>
     <div class="service-text reveal-up delay-2">
@@ -270,6 +283,115 @@
       </ul>
       <a href="contact.html?service=facilities" class="btn btn-primary">
         Enquire Now <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALIST TRADES -->
+<section style="background:var(--navy-deep);padding:var(--section-pad) clamp(1.5rem,6vw,5rem);" id="trades">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div class="reveal-up" style="max-width:620px;margin-bottom:3.5rem;">
+      <p class="micro-label" style="margin-bottom:0.8rem;color:rgba(201,153,47,0.7);">Our Disciplines</p>
+      <h2 style="color:var(--white);">Skilled trades, <em>all under one roof.</em></h2>
+      <p style="color:rgba(255,255,255,0.6);margin-top:1rem;">From a single trade call-out to full multi-discipline renovation projects — CBM has the qualified specialists your property needs, coordinated by a single accountable team.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.5px;background:rgba(201,153,47,0.12);">
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-1"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="droplets" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Plumbing</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Leaks, blockages, full installations &amp; hot water systems.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-2"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="zap" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Electrical Works</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">NICEIC-approved rewires, consumer units, testing &amp; certification.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-3"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="hammer" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Joinery &amp; Carpentry</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Doors, windows, fitted furniture, staircases &amp; structural timber.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-4"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="layers" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Plastering</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Skim coat, full plaster, dry lining &amp; rendering to a premium finish.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-1"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="paintbrush" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Painting &amp; Decorating</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Interior &amp; exterior, commercial &amp; residential decoration.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-2"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="home" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Roofing Repairs</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Pitched &amp; flat roofs, guttering, fascia &amp; soffit replacement.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-3"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="refresh-cw" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Full Renovations</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Full &amp; partial refurbishments managed from strip-out to handover.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-4"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="key" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">End-of-Tenancy</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Rapid turnaround repairs &amp; upgrades between tenancies.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-1"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="thermometer" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Heating &amp; Gas</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Gas Safe boiler service, repair &amp; replacement, heating systems.</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:2rem 1.5rem;text-align:center;transition:background 0.3s;" class="reveal-up delay-2"
+        onmouseover="this.style.background='rgba(201,153,47,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">
+        <div style="width:52px;height:52px;background:rgba(201,153,47,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--gold);">
+          <i data-lucide="wrench" style="width:22px;height:22px;"></i>
+        </div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.4rem;">Reactive Maintenance</h4>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin:0;">Multi-skilled operatives on call for fast, reliable repairs.</p>
+      </div>
+
+    </div>
+    <div style="margin-top:2.5rem;text-align:center;" class="reveal-up delay-3">
+      <a href="contact.html" class="btn btn-primary">
+        Discuss Your Requirements <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
       </a>
     </div>
   </div>
@@ -401,6 +523,7 @@
         <ul>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Our Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>

@@ -1,16 +1,20 @@
 import {
   createIcons,
   ArrowRight, Award, Building2, CheckCircle, ChevronDown,
-  HeartHandshake, Home, Lightbulb, Mail, MapPin, Phone,
-  Send, ShieldCheck, TrendingUp, Users, Wrench,
+  Droplets, Hammer, HeartHandshake, Home, Image, Key,
+  Layers, Lightbulb, Mail, MapPin, Paintbrush, Phone,
+  PlayCircle, RefreshCw, Send, ShieldCheck, Thermometer,
+  TrendingUp, Users, Wrench, Zap,
 } from 'lucide';
 
 // ── Lucide icons ──
 createIcons({
   icons: {
     ArrowRight, Award, Building2, CheckCircle, ChevronDown,
-    HeartHandshake, Home, Lightbulb, Mail, MapPin, Phone,
-    Send, ShieldCheck, TrendingUp, Users, Wrench,
+    Droplets, Hammer, HeartHandshake, Home, Image, Key,
+    Layers, Lightbulb, Mail, MapPin, Paintbrush, Phone,
+    PlayCircle, RefreshCw, Send, ShieldCheck, Thermometer,
+    TrendingUp, Users, Wrench, Zap,
   },
 });
 
@@ -101,6 +105,11 @@ if (tickerInner) {
     'Commercial Building Services',
     'Domestic Services',
     'Facilities Management',
+    'Joinery & Carpentry',
+    'Plumbing & Heating',
+    'Painting & Decorating',
+    'Full Renovations',
+    'End-of-Tenancy Repairs',
     'Edinburgh & Lothians',
     'Trusted Since 2014',
     'Professional · Reliable · Innovative',
