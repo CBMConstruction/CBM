@@ -29,8 +29,27 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--w
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
+/* Prevent grid/flex children from blowing past their cell width */
+.section-inner > *,
+.contact-grid > *,
+.about-grid > *,
+.services-grid > *,
+.stats-grid > *,
+.footer-grid > *,
+.projects-grid > *,
+.hero-inner > * { min-width: 0; }
+
+/* Long unbreakable strings (email, URLs) must wrap inside flex/grid cells */
+.contact-detail > div,
+.contact-card-detail > div { min-width: 0; overflow: hidden; }
+.footer-col ul li a { word-break: break-all; overflow-wrap: anywhere; }
+
 /* ─── Typography ─── */
-.display, h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.display, h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  letter-spacing: -0.02em; line-height: 1.1;
+  overflow-wrap: break-word; word-break: break-word;
+}
 h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); }
 h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); }
 h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
@@ -39,7 +58,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
   font-size: 0.7rem; font-weight: 600; letter-spacing: 0.22em;
   text-transform: uppercase; color: var(--gold);
 }
-p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
+p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); overflow-wrap: break-word; }
 
 /* ─── Fine rule ─── */
 .fine-rule { width: 100%; height: 1px; background: var(--fine-rule); }
@@ -190,7 +209,7 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
 
 /* ─── Section Wrapper ─── */
 .section { padding: var(--section-pad) clamp(1.25rem, 6vw, 5rem); width: 100%; }
-.section-inner { max-width: 1280px; margin: 0 auto; width: 100%; }
+.section-inner { max-width: 1280px; margin: 0 auto; width: 100%; min-width: 0; }
 .section-header { margin-bottom: 3.5rem; }
 .section-header h2 em { font-style: normal; color: var(--gold); }
 
@@ -258,6 +277,7 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
 /* ─── About ─── */
 .about-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+  min-width: 0; width: 100%;
 }
 .about-img-wrap { position: relative; }
 .about-img-wrap img {
@@ -365,6 +385,7 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
 /* ─── Contact ─── */
 .contact-grid {
   display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem;
+  min-width: 0; width: 100%;
 }
 .contact-info h2 { margin-bottom: 1.5rem; }
 .contact-info h2 em { font-style: normal; color: var(--gold); }
@@ -383,8 +404,8 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
   font-size: 0.85rem; font-weight: 600; color: var(--navy-deep);
   margin-bottom: 0.2rem;
 }
-.contact-detail p { font-size: 0.9rem; margin: 0; }
-.contact-detail a { color: var(--navy-mid); transition: color 0.2s; }
+.contact-detail p { font-size: 0.9rem; margin: 0; overflow-wrap: break-word; word-break: break-all; }
+.contact-detail a { color: var(--navy-mid); transition: color 0.2s; overflow-wrap: break-word; word-break: break-all; }
 .contact-detail a:hover { color: var(--gold); }
 
 /* ─── Form ─── */
