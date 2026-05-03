@@ -6,6 +6,36 @@
 <title>CBM — Capital Property & Building Maintenance Ltd</title>
 <meta name="description" content="Capital Property & Building Maintenance Ltd. Trusted property maintenance and building services across Edinburgh and the Lothians.">
 <link rel="stylesheet" href="styles/main.css">
+<style>
+/* ── Index page mobile fixes ── */
+@media (max-width: 1024px) {
+  /* Contact section: when stacked, remove fixed height from navy card */
+  .contact-grid .reveal-up > div { height: auto !important; }
+}
+@media (max-width: 768px) {
+  /* About image — constrain height on mobile */
+  .about-img-wrap img { height: 320px; }
+  /* About badge — prevent text overflow in small badge */
+  .about-img-badge { padding: 1rem 1.25rem; }
+  /* Projects section header row — stack on mobile */
+  .projects-bg .section-header { flex-direction: column !important; align-items: flex-start !important; }
+  /* Contact section cards: full-width clickable rows */
+  .contact-grid .reveal-up > div a[href^="tel"],
+  .contact-grid .reveal-up > div a[href^="mailto"] {
+    padding: 1rem 1.2rem !important;
+  }
+  /* Stats section spacing */
+  .stats-section .section-inner { padding: 0; }
+}
+@media (max-width: 480px) {
+  /* Hero: stack CTA buttons full width */
+  .hero-inner h1 { font-size: clamp(1.85rem, 8vw, 2.4rem); }
+  /* About image shorter on small phones */
+  .about-img-wrap img { height: 260px; }
+  /* Service cards: tighten padding */
+  .service-card { padding: 2rem 1.5rem; }
+}
+</style>
 </head>
 <body>
 
@@ -159,7 +189,7 @@
 <section class="section">
   <div class="section-inner">
     <div class="about-grid">
-      <div class="about-img-wrap reveal-left">
+      <div class="about-img-wrap reveal-left" style="overflow:visible;">
         <img src="assets/IMG_20260501_131440.jpg"
              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80'"
              alt="CBM team at work" loading="lazy">

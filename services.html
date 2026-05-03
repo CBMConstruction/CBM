@@ -95,12 +95,36 @@
   .service-section-inner.reverse { direction: ltr; }
   .ps-grid { grid-template-columns: 1fr 1fr; }
   .ps-card:first-child { grid-column: auto; }
+  .ps-card:first-child img { height: 320px; }
   .process-steps { grid-template-columns: 1fr 1fr; }
+  /* Service images: reduce height when stacked */
+  .service-img-wrap img { height: 360px; }
+}
+@media (max-width: 768px) {
+  /* Service section padding */
+  .service-section { padding: 3.5rem 1.25rem; }
+  /* Service images */
+  .service-img-wrap img { height: 280px; }
+  /* Feature list: tighten */
+  .service-features li { padding: 0.65rem 0; font-size: 0.88rem; }
+  /* Process strip */
+  .process-strip { padding: 3rem 1.25rem; }
+  /* Projects showcase */
+  .projects-showcase { padding: 3.5rem 1.25rem; }
+  /* Trades grid: 2-col on tablet */
+  .service-text h2 { font-size: clamp(1.5rem, 5vw, 2rem); }
 }
 @media (max-width: 640px) {
   .ps-grid { grid-template-columns: 1fr; }
+  .ps-card img { height: 240px !important; }
   .process-steps { grid-template-columns: 1fr; }
   .process-step { border-right: none; border-bottom: 1px solid rgba(201,153,47,0.15); }
+  /* Service images: shortest on small phones */
+  .service-img-wrap img { height: 230px; }
+  /* Service tag position stays */
+  .service-tag { font-size: 0.68rem; }
+  /* Specialist trades: at least 2-col */
+  .service-features { margin: 1.2rem 0; }
 }
 </style>
 </head>

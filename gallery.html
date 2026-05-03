@@ -82,6 +82,11 @@
   font-weight: 600; color: rgba(255,255,255,0.75); letter-spacing: 0.06em;
 }
 
+/* Video grid — allow single column on small screens */
+@media (max-width: 640px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
+
 /* Lightbox */
 .lightbox {
   display: none; position: fixed; inset: 0; z-index: 2000;
@@ -94,11 +99,11 @@
   cursor: default; box-shadow: 0 32px 80px rgba(0,0,0,0.6);
 }
 .lightbox-close {
-  position: absolute; top: 1.5rem; right: 1.5rem;
+  position: absolute; top: 1rem; right: 1rem;
   background: rgba(201,153,47,0.15); border: 1px solid rgba(201,153,47,0.3);
   color: var(--gold); width: 44px; height: 44px;
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer; font-size: 1.4rem; transition: all 0.2s;
+  cursor: pointer; font-size: 1.4rem; transition: all 0.2s; z-index: 1;
 }
 .lightbox-close:hover { background: var(--gold); color: var(--navy-deep); }
 .lightbox-nav {
@@ -109,12 +114,30 @@
   cursor: pointer; font-size: 1.4rem; transition: all 0.2s;
 }
 .lightbox-nav:hover { background: var(--gold); color: var(--navy-deep); }
-.lightbox-prev { left: 1.5rem; }
-.lightbox-next { right: 1.5rem; }
+.lightbox-prev { left: 0.75rem; }
+.lightbox-next { right: 0.75rem; }
 .lightbox-counter {
-  position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
   font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem;
   color: rgba(255,255,255,0.5); letter-spacing: 0.12em;
+}
+
+/* Gallery mobile responsive additions */
+@media (max-width: 768px) {
+  .gallery-tabs { margin-bottom: 2rem; }
+  .gallery-tab { padding: 0.75rem 1.25rem; font-size: 0.78rem; }
+  /* Lightbox: image fits mobile viewport */
+  .lightbox img { max-width: 96vw; max-height: 80vh; }
+  /* Lightbox nav: move closer to edges so they don't overlap image */
+  .lightbox-prev { left: 0.25rem; }
+  .lightbox-next { right: 0.25rem; }
+  .lightbox-nav { width: 44px; height: 44px; font-size: 1.2rem; }
+}
+@media (max-width: 480px) {
+  /* Gallery masonry already goes 1-col at 480px */
+  .gallery-section { padding: 0; }
+  /* Video grid single col */
+  .video-grid { grid-template-columns: 1fr; gap: 1rem; }
 }
 </style>
 </head>

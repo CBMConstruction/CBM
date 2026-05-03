@@ -77,9 +77,38 @@
 .hs-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
 }
+@media (max-width: 1024px) {
+  .hs-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .accred-strip { gap: 1.5rem; }
+}
 @media (max-width: 768px) {
-  .hs-grid { grid-template-columns: 1fr; }
+  .hs-grid { grid-template-columns: 1fr; gap: 2rem; }
   .timeline { padding-left: 1.8rem; }
+
+  /* Constrain tall inline-styled images */
+  .hs-grid img { height: 300px !important; object-fit: cover; }
+
+  /* Accred strip: 2-column wrapping */
+  .accred-strip { gap: 1rem; }
+  .accred-item { font-size: 0.78rem; }
+
+  /* Value cards: tighten on mobile */
+  .value-card { padding: 2rem 1.5rem; }
+
+  /* Timeline: tighten spacing */
+  .timeline-item { padding-bottom: 2rem; }
+  .timeline-item h3 { font-size: 1rem; }
+
+  /* About values in H&S section */
+  .about-value { gap: 0.75rem; padding: 1rem 0; }
+}
+@media (max-width: 480px) {
+  /* Even shorter images on small phones */
+  .hs-grid img { height: 240px !important; }
+  /* Accred strip: single column */
+  .accred-strip { flex-direction: column; gap: 0.75rem; padding: 1.5rem 0; }
+  /* Timeline dot alignment */
+  .timeline-dot { left: -2.4rem; }
 }
 </style>
 </head>

@@ -108,9 +108,31 @@
 @media (max-width: 1024px) {
   .contact-page-grid { grid-template-columns: 1fr; gap: 3rem; }
 }
+@media (max-width: 1024px) {
+  .contact-page-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .faq-outer { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+}
+@media (max-width: 768px) {
+  .form-card { padding: 2.5rem 1.75rem; }
+  /* Direct contact rows: ensure they don't overflow */
+  .form-card a[href^="tel"],
+  .form-card a[href^="mailto"] {
+    padding: 1.1rem 1.2rem !important;
+  }
+  /* Contact card details */
+  .contact-card { padding: 2rem 1.5rem; }
+  /* Map embed height */
+  .map-embed { height: 240px; }
+  /* Page hero on contact */
+  .page-hero h1 { word-break: break-word; }
+}
 @media (max-width: 640px) {
-  .form-card { padding: 2rem 1.5rem; }
+  .form-card { padding: 2rem 1.25rem; }
   .hours-grid { grid-template-columns: 1fr; }
+  /* Contact details icon smaller */
+  .contact-card-icon { width: 32px; height: 32px; min-width: 32px; }
+  /* Checklist items wrap properly */
+  .form-card [style*="flex-direction:column"] > div { align-items: flex-start !important; }
 }
 </style>
 </head>
